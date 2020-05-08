@@ -30,3 +30,4 @@ build ld with android ndk, but I got a fail with build script in the binutils re
 
 7. Final Target PoCL
 We will use binaries and libraries built from above!! LLVM binaries should be Host's and library shoud be Target's. Check the script file and change PATHs! (I think some paths or linking makes error, because I am not skillful on such build process with CMAKE yet...)
+https://github.com/pocl/pocl and I used in here ver 1.3. Because in there, you can find some hint of android, which developer tried to. But it seems to be 32bit android...
