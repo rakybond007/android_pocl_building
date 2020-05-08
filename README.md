@@ -1,5 +1,6 @@
 # android_pocl_building
 Reference : https://github.com/FreemanX/pocl-android-dependency.git
+*** PATHs like INSTALL_DIR is not automated!! Current values are customized for me, so you have to change every script ***
 
 1. You can Download ndk from https://ci.android.com/builds/branches/aosp-ndk-release-r21/grid? which version is r21!
    (We use toolchain from ndk for cross-compile, every PATH in build script should be modified.) My target is Galaxy S10, android api level 28
