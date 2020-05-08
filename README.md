@@ -24,3 +24,9 @@ output dir is named as libtool-out
 5. ncurses
 Found the github https://github.com/mirror/ncurses reference says it's version is 6.2 I used the master.
 output dir is named as ncurses-out
+
+6. binutil : Reference repo says to  git clone https://android.googlesource.com/toolchain/binutils
+build ld with android ndk, but I got a fail with build script in the binutils repo, lack of python module. I cannot find them in my ndk, but can be found on https://android.googlesource.com/platform/ndk. But I did not tried more
+
+7. Final Target PoCL
+We will use binaries and libraries built from above!! LLVM binaries should be Host's and library shoud be Target's. Check the script file and change PATHs! (I think some paths or linking makes error, because I am not skillful on such build process with CMAKE yet...)
