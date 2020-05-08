@@ -1,5 +1,8 @@
 # android_pocl_building
 Reference : https://github.com/FreemanX/pocl-android-dependency.git
+*** PATHs like INSTALL_DIR is not automated!! Current values are customized for me, so you have to change every script ***
+
+I got lot of help in above github, you can refer the issue.
 
 1. You can Download ndk from https://ci.android.com/builds/branches/aosp-ndk-release-r21/grid? which version is r21!
    (We use toolchain from ndk for cross-compile, every PATH in build script should be modified.) My target is Galaxy S10, android api level 28
@@ -12,9 +15,12 @@ Reference : https://github.com/FreemanX/pocl-android-dependency.git
     build static libraries for aarch64 and put them in llvm/lib/
     
 3. hwloc https://github.com/open-mpi/hwloc git clone from here, you have to appy the patch. But under v1.9 of hwloc have the src directory to appy the patch file, I checked out to v1.9. And I remember as there is no original configure file, so I remember as I used autogen.sh file.
+output dir is named as hwloc-out
 
 4. libtool just followed reference
 git clone git://git.savannah.gnu.org/libtool.git  commit b9b44533fbf7c7752ffd255c3d09cc360e24183b
+output dir is named as libtool-out
 
 5. ncurses
 Found the github https://github.com/mirror/ncurses reference says it's version is 6.2 I used the master.
+output dir is named as ncurses-out
